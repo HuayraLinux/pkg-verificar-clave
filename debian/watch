@@ -1,0 +1,2 @@
+version=3
+https://github.com/daltomi/verificar_clave/releases .*/v(\d[\d\.]+)\.tar\.gz

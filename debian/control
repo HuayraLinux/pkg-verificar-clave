@@ -1,0 +1,19 @@
+Source: huayra-verificar-clave
+Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
+Section: x11
+Priority: optional
+Standards-Version: 3.9.6
+Homepage: https://github.com/daltomi/verificar_clave
+Vcs-Git: git://git@github.com:HuayraLinux/pkg-verificar-clave.git
+Vcs-Browser: https://github.com:HuayraLinux/pkg-verificar-clave
+Build-Depends: debhelper (>= 9), libgtk2.0-dev, libpam0g-dev,
+ libnotify-dev, cmake
+
+Package: huayra-verificar-clave
+Architecture: i386 amd64
+Depends: ${misc:Depends}, ${shlibs:Depends}, libgtk2.0-0, libpam0g, libnotify4
+Description: Notificacion para qie el usuario cambie su clave por defecto.
+ Verifica que la clave de un usuario en particular no esté siendo utilizada.
+ En caso afirmativo, se informa mediante un mensaje al inicio de sesión,
+ notificado en el escritorio.
+
